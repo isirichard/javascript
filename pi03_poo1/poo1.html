@@ -7,20 +7,32 @@
 <body>
 	<input type="button" id="boton1">
 	<input type="button" id="boton2">
+	<input type="text" id= "micuadro">
+
 	<script>
 		var miboton = document.getElementById("boton1"); //objeto documento web
 		var miboton2 = document.getElementById("boton2");
-		
+		var cuadroTexto = document.getElementById("micuadro");
+
 		miboton.style.width = "300px";
 		miboton.style.height = "300px";
 
 		miboton2.style.width = "300px";
 		miboton2.style.height = "300px";
+
+		miboton2.focus();
+
+		cuadroTexto.style.background = "red";
+
+		cuadroTexto.value= "Escriba aqui....";
+		cuadroTexto.style.height="200px";
+
 		//miboton.style.background = "blue";
-		
+/*
 		miboton.focus(function(event) {
-			/* Act on the event */
+
 		});
+*/
 	</script>
 </body>
 </html>
