@@ -1,8 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Juego Adivina</title>
 </head>
+	<script>
+		var aleatorio = Math.round(Math.random()*100);
+		var minum = -1, intentos = 0;
+		
+		//minum = prompt("Introduce un n° entre 0 y 100")
+		while(aleatorio != minum){
+			minum = prompt("Introduce un n° entre 0 y 100")
+			if(aleatorio > minum){
+				alert("Número alto");	
+			}
+			if(aleatorio < minum){
+				alert("Número bajo");
+			}
+			intentos++;
+		}
+		alert("Correcto número de intentos:"+ intentos)
+
+	</script>
 <body>
 
 </body>
