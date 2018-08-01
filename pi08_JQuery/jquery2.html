@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	
+	<script src="jquery-3.3.1.min.js"></script>
+
+	<script>
+		
+
+		function validar(){
+			var n_usuario = document.getElementById("usuario").value;
+			if(n_usuario==""){
+				$("#usuario").after("Rellena este campo, por favor");
+			}
+
+			var n_nombre = document.getElementById("nombre").value;
+			var n_apellido = document.getElementById("apellido").value;
+		}
+
+	</script>
+</head>
+<body>
+	<!--validación-->
+	<form action="" method="get" accept-charset="utf-8">
+		<input type="text" id="usuario" name="" value="" placeholder=""><br>
+		<input type="text" id="nombre" name="" value="" placeholder=""><br>
+		<input type="text" id="apellido" name="" value="" placeholder=""><br>
+		<input type="button" name="" value="Dale" onclick="validar()">
+	
+	</form>
+</body>
+</html>
