@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		#primer_parrafo{
+			background-color: #F00;
+		}
+	</style>
+	<script src="jquery-3.3.1.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			//var colorFondo = $("#primer_parrafo").css("background-color","#00F");
+			$("p.destacado").css("border","2px dotted blue");
+					
+		});
+	</script>
+</head>
+<body>
+	<p id="primer_parrafo">Primer párrafo</p>
+	<p class="destacado">Párrafo destacado</p>
+	<p>Tercer párrafo</p>
+</body>
+</html>
